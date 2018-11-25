@@ -12,6 +12,9 @@
 		8C2BE4CD21A6E2C40067087D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2BE4CB21A6E2C40067087D /* Main.storyboard */; };
 		8C2BE4CF21A6E2C60067087D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2BE4CE21A6E2C60067087D /* Assets.xcassets */; };
 		8C2BE4D221A6E2C60067087D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2BE4D021A6E2C60067087D /* LaunchScreen.storyboard */; };
+		8C2BE4DC21AACAAA0067087D /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C2BE4D921AACAA90067087D /* 01.jpg */; };
+		8C2BE4DD21AACAAA0067087D /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C2BE4DA21AACAA90067087D /* 02.jpg */; };
+		8C2BE4DE21AACAAA0067087D /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8C2BE4DB21AACAAA0067087D /* 03.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		8C2BE4CE21A6E2C60067087D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C2BE4D121A6E2C60067087D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C2BE4D321A6E2C60067087D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C2BE4D921AACAA90067087D /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		8C2BE4DA21AACAA90067087D /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
+		8C2BE4DB21AACAAA0067087D /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				8C2BE4C921A6E2C40067087D /* ViewController.swift */,
 				8C2BE4CB21A6E2C40067087D /* Main.storyboard */,
 				8C2BE4CE21A6E2C60067087D /* Assets.xcassets */,
+				8C2BE4D921AACAA90067087D /* 01.jpg */,
+				8C2BE4DA21AACAA90067087D /* 02.jpg */,
+				8C2BE4DB21AACAAA0067087D /* 03.jpg */,
 				8C2BE4D021A6E2C60067087D /* LaunchScreen.storyboard */,
 				8C2BE4D321A6E2C60067087D /* Info.plist */,
 			);
@@ -122,8 +131,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2BE4DE21AACAAA0067087D /* 03.jpg in Resources */,
+				8C2BE4DD21AACAAA0067087D /* 02.jpg in Resources */,
 				8C2BE4D221A6E2C60067087D /* LaunchScreen.storyboard in Resources */,
 				8C2BE4CF21A6E2C60067087D /* Assets.xcassets in Resources */,
+				8C2BE4DC21AACAAA0067087D /* 01.jpg in Resources */,
 				8C2BE4CD21A6E2C40067087D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
