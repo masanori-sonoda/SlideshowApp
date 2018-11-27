@@ -22,6 +22,9 @@
                                 <rect key="frame" x="154" y="318" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="再生/停止"/>
+                                <connections>
+                                    <action selector="startSlide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="knB-aF-IfR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXH-lj-KNv">
                                 <rect key="frame" x="55" y="318" width="31" height="30"/>
@@ -29,7 +32,6 @@
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="prevImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kCk-3x-xUr"/>
-                                    <action selector="previous:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KEc-FI-Zbn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpg-Fy-6WA">
@@ -38,11 +40,10 @@
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQ0-L2-YwV"/>
-                                    <action selector="nextPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZx-D8-VgN"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zF9-OP-TfY">
-                                <rect key="frame" x="67" y="98" width="240" height="128"/>
+                                <rect key="frame" x="55" y="98" width="265" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -55,6 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>
