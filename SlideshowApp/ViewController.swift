@@ -50,20 +50,53 @@ class ViewController: UIViewController {
         
         // 表示している画像の番号を元に画像を表示する
         displayImage()
-    }
-    
-    
-    @objc func transionImage (_ timer: Timer) {
-        self.imageNo += 1
         
-        displayImage()
     }
     
-    @IBAction func startSlide(_ sender: Any) {
-        if self.timer == nil {
-        self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(transionImage(_:)), userInfo: nil, repeats: true)
-        }
+    
+    @objc func transitionImage (_ timer: Timer) {
+        // 画像番号を１ずつ増やす
+        self.imageNo += 1
+        // 表示している画像の番号を元に画像を表示する
+        displayImage()
+        
+        
     }
+    
+    @IBOutlet weak var statusLabel: UIButton! 
+
+    @IBAction func startSlide(_ sender: Any) {
+        // timerの初期化
+        if self.timer == nil {
+        // 1秒ごとにtransition
+        self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(transitionImage(_:)), userInfo: nil, repeats: true)
+        statusLabel.setTitle("停止", for: .normal)
+        
+        forwardButton.isEnabled = false
+        backButton.isEnabled = false
+            
+        } else {
+            self.timer.invalidate()   // 現在のタイマーを破棄する
+            self.timer = nil          // startSlide() の timer == nil で判断するために、 timer = nil としておく
+            statusLabel.setTitle("再生", for: .normal)
+            
+            forwardButton.isEnabled = true
+            backButton.isEnabled = true
+        }
+        
+    }
+    
+    
+    @IBOutlet weak var forwardButton: UIButton!
+    
+    @IBOutlet weak var backButton: UIButton!
+    
+    // 画像をタップしたら画面が遷移
+    @IBAction func tapView(_ sender: Any) {
+        
+    }
+    
+  
     
     
     override func viewDidLoad() {
@@ -80,6 +113,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
 
 }
