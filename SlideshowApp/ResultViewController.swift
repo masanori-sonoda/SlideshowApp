@@ -9,11 +9,19 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    
+    @IBOutlet weak var imageMag: UIImageView!
+    
+    var image: UIImage!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // Image Viewに読み込んだ画像をセット
+        imageMag.image = image
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +30,7 @@ class ResultViewController: UIViewController {
     }
     
 
+    
     /*
     // MARK: - Navigation
 
