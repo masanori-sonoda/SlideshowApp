@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         }
         
         // 画像ファイルの読み込み
-        let image = UIImage(named: imageArray[imageNo])
         
         let buttonImage : UIImage? = UIImage(named: imageArray[imageNo])
         
@@ -102,8 +101,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        // 画像ファイルの読み込み
-        let image = UIImage(named: "01.jpg")
         
         // ImageViewに画像を設定
         imageViewButton.setImage(buttonImage, for: .normal)
